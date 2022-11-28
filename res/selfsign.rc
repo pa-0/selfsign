@@ -1,0 +1,20 @@
+﻿#ifdef RC_INVOKED
+#ifndef _INC_WINDOWS
+#define _INC_WINDOWS
+#include "winres.h"
+#endif
+#endif
+
+101 ICON "selfsign.ico"
+makecert_exe RCDATA "makecert.exe"
+pvk2pfx_exe RCDATA "pvk2pfx.exe"
+signtool_exe RCDATA "signtool.exe"
+
+#define company_name "`Leo` Drimtry Kuznetsov"
+#define copyright "Copyright (C) 2018-2022 Drimtry Kuznetsov. All rights reserved."
+#define file_description "selfsign sample app"
+#define original_file_name "selfsign.exe"
+#define product_name "selfsign"
+
+#include "..\res\version.rc"
+
